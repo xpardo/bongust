@@ -1,0 +1,275 @@
+body {
+    background-color: #da9054;
+    font-family: 'chilanka';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: none;
+}
+
+
+/*carousel*/
+
+.carousel-item {
+    text-align: center;
+    line-height: 10px;
+    font-size: 15px;
+    font-family: 'chilanka';
+}
+
+
+/*moure el text de metode de pagament mes aball*/
+
+.mov {
+    line-height: 50px;
+}
+
+
+/*link on esta*/
+
+a:link,
+a:visited {
+    color: rgb(56, 28, 6);
+}
+
+
+/*politicas*/
+
+h1 {
+    display: block;
+    margin: 0 auto;
+    width: 410px;
+    font-family: 'chilanka';
+    font-size: 40px;
+}
+
+.atcli {
+    display: block;
+    margin: 0 auto;
+    width: 810px;
+    font-size: 16px;
+    font-family: 'chilanka';
+}
+
+
+/*alta*/
+
+.container-all {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.ctn-form {
+    width: 80%;
+    padding: 40px;
+    background: #f7f7f7;
+}
+
+.logo {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+    color: #000000;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #7a7a7a;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+    outline: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    color: #c58f64;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    margin-top: 60px;
+    color: rgb(0, 0, 0);
+    border: 0px;
+    background: linear-gradient(90deg, #7bd65f, #72501e);
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #72501e, #7bd65f);
+}
+
+.text-footer {
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+    color: #7a7a7a;
+    font-weight: 300;
+    font-family: 'chilanka';
+    font-size: 40px;
+}
+
+.text-footer a {
+    color: #029EE1;
+    font-weight: 500;
+}
+
+
+/* TEXTO DE ERROR */
+
+.msg-error {
+    color: red;
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 800px) {
+    .ctn-text {
+        display: none;
+    }
+    .ctn-form {
+        margin: auto;
+        width: 100%;
+        background: white;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title-welcome {
+        font-weight: 400;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
+
+
+/*Productes*/
+
+h1 {
+    display: block;
+    margin: 0 auto;
+    width: 410px;
+    font-family: 'chilanka';
+    font-size: 40px;
+}
+
+.prod {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    font-size: 16px;
+    font-family: 'chilanka';
+    background-color: #E3F5B8;
+    padding: 30px 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+
+/*Productes en la home*/
+
+.prodhom {
+    display: block;
+    margin: 0 auto;
+    width: 900px;
+    font-size: 16px;
+    font-family: 'chilanka';
+    background-color: #E3F5B8;
+    padding: 30px 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+
+/*pagar*/
+
+.page {
+    display: block;
+    margin: 0 auto;
+    width: 900px;
+    font-size: 16px;
+    font-family: 'chilanka';
+    background-color: #E3F5B8;
+    padding: 30px 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+
+/*busqueda*/
+
+.table {
+    background: #E3F5B8;
+}
+
+.buscar {
+    background: #E3F5B8;
+    text-align: justify;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 10px;
+}
+
+
+/*cookies*/
+
+#div-cookies {
+    color: black;
+    box-shadow: 0px 0px 5px 5px #808080;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(216, 238, 209);
+    padding: 7px;
+    text-align: center;
+    z-index: 99;
+    opacity: 0.9;
+}
+
+#cajacookies button {
+    color: black;
+}
+
+
+/*___________________________________________________________*/
+
+
+/*__________________________________________________________*/

@@ -1,0 +1,278 @@
+body {
+    background-color: #da9054;
+    font-family: 'chilanka';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: none;
+}
+
+
+/*Formulari de contactes*/
+
+
+/*Formulari_____________*/
+
+.form_wrap {
+    width: 1050px;
+    height: 530px;
+    margin: 50px auto;
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/*Informacio de contacte_____________*/
+
+.contact_info {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/contact/fondo.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.contact_info::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2dc56783;
+    opacity: 0.5;
+}
+
+.info_title,
+.info_items {
+    position: relative;
+    /*col·locar le lletre sobre la imatge*/
+    z-index: 2;
+}
+
+.info_title {
+    margin-bottom: 60px;
+    font-size: 100px;
+}
+
+.info_title span {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info_title h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.info_items p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.info_items p span {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+/*Formulari de contactes_______-*/
+
+form.form_contact {
+    width: 130%;
+    padding: 30px 40px;
+}
+
+form.form_contact h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #72501e;
+    margin-bottom: 30px;
+}
+
+form.form_contact .user_info {
+    display: flex;
+    flex-direction: column;
+}
+
+form.form_contact label {
+    font-weight: 600;
+}
+
+form.form_contact input,
+form.form_contact textarea {
+    width: 100%;
+    padding: 8px 0px 5px;
+    border: none;
+    border-bottom: 2px solid #5D3513;
+    font-family: 'open sans';
+    color: #5a5a5a;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+form.form_contact textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form.form_contact input[type="submit"] {
+    width: 180px;
+    background: green;
+    padding: none;
+    border-radius: 20px;
+    color: white;
+    font-family: 'chilanka';
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form.form_contact input[type="submit"]:hover {
+    background: #cc8e58;
+}
+
+
+/*Finestre d'errors*/
+
+.modal_wrap {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.misatge_modal {
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+
+.misatge_modal h3 {
+    text-align: center;
+    font-family: 'ubuntu';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.misatge_modal h3::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #c5c5c5;
+    margin: 10px 0px 15px;
+}
+
+.misatge_modal p {
+    font-size: 16px;
+    color: #606060;
+}
+
+.misatge_modal p i {
+    color: #ee0202;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+#btnClose {
+    display: inline-block;
+    padding: 3px 10px;
+    margin-top: 10px;
+    background: #e25151;
+    color: #fff;
+    border: 2px solid #b14141;
+    cursor: pointer;
+}
+
+
+/*Misatge de exit*/
+
+.misatge-exit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.misatge-exit h1 {
+    font-size: 35px;
+    font-display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.misatge-exit a {
+    display: block;
+    padding: 10px 30px;
+    background: green;
+    text-decoration: none;
+    color: white;
+}
+
+.misatge-exit a:hover {
+    background: #cc8e58;
+}
+
+
+/*link on esta*/
+
+a:link,
+a:visited {
+    color: rgb(56, 28, 6);
+}
+
+
+/*moure el text de metode de pagament mes aball*/
+
+.mov {
+    line-height: 50px;
+}
+
+
+/*busqueda*/
+
+.table {
+    background: #E3F5B8;
+}
+
+.buscar {
+    background: #E3F5B8;
+    text-align: justify;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 10px;
+    width: 300px;
+    height: 110px;
+}
+
+
+/*_________*/
