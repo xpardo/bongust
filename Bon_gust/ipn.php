@@ -6,8 +6,8 @@ $req = 'cmd=_notify-validate';
  
 
 foreach ($_POST as $key => $value) {
-$value = urlencode(stripslashes($value));
-$req .= "&$key=$value";
+ $value = urlencode(stripslashes($value));
+ $req .= "&$key=$value";
 }
 
  
@@ -25,16 +25,16 @@ $fp = fsockopen ('ssl://www.sandbox.paypal.com', 443, $errno, $errstr, 30);
 //En caso de querer usar PayPal oficialmente:
 //$fp = fsockopen (�ssl://www.paypal.com�, 443, $errno, $errstr, 30);
 if (!$fp) {
-// ERROR DE HTTP
-echo "no se ha aiberto el socket<br/>";
+ // ERROR DE HTTP
+    echo "no se ha aiberto el socket<br/>";
 }else{ echo "si se ha abierto el socket<br/>";
-fputs ($fp, $header . $req);
-while (!feof($fp)) {
-$res = fgets ($fp, 1024);
-if (strcmp ($res, "VERIFIED") == 0) {//Almacenamos todos los valores recibidos por $_POST.
-foreach($_POST as $key => $value){
-$recibido.= $key." = ". $value."\r\n";
-}//Enviamos por correo todos los datos , esto es solo para que veis como funciona
+    fputs ($fp, $header . $req);
+    while (!feof($fp)) {
+        $res = fgets ($fp, 1024);
+            if (strcmp ($res, "VERIFIED") == 0) {//Almacenamos todos los valores recibidos por $_POST.
+                foreach($_POST as $key => $value){
+                    $recibido.= $key." = ". $value."\r\n";
+                }//Enviamos por correo todos los datos , esto es solo para que veis como funciona
 
  
 
@@ -46,13 +46,11 @@ $recibido.= $key." = ". $value."\r\n";
 
  
 
-mail("correo", "NOTIFICACION DE PAGO", $recibido , $headers);
-} else if (strcmp ($res, "INVALID") == 0) {
-mail("correo", "NOTIFICACION DE PAGO INVALIDA", "invalido",$headers);}
-}fclose ($fp);
-
- 
-
+            mail("correo", "NOTIFICACION DE PAGO", $recibido , $headers);
+        } else if (strcmp ($res, "INVALID") == 0) {
+            mail("correo", "NOTIFICACION DE PAGO INVALIDA", "invalido",$headers);
+        }
+    }fclose ($fp);
 }
 
  
