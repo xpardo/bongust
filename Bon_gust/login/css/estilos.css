@@ -1,6 +1,6 @@
 body {
     background-color: #da9054;
-    font-family: 'chilanka';
+    font-family: 'open sans';
 }
 
 * {
@@ -59,6 +59,7 @@ input[type="password"] {
     outline: 0px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     color: #c58f64;
+    font-family: 'open sans';
     font-size: 16px;
 }
 
@@ -84,7 +85,7 @@ input[type="submit"]:hover {
     text-align: center;
     color: #7a7a7a;
     font-weight: 300;
-    font-family: 'chilanka';
+    font-family: 'open sans';
     font-size: 20px;
 }
 

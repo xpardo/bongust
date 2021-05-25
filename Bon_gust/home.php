@@ -160,19 +160,19 @@ session_start();
                         
 
                             <div class="carousel-item active">
-                                <img  src="img/carrousel/caro_uno/te-chocolate-cafe.jpeg" class="d-block img-fluid container-fluid" alt="te xocolata cafe">
+                                <img  src="img/carrousel/caro_uno/te-chocolate-cafe.jpeg" class="d-block img-fluid" alt="te xocolata cafe">
                             </div>
 
                             <div class="carousel-item">
-                                <img  src="img/carrousel/caro_uno/tip_xoco.jpeg" class="d-block img-fluid container-fluid"  alt="tip xoco">
+                                <img  src="img/carrousel/caro_uno/tip_xoco.jpeg" class="d-block img-fluid"  alt="tip xoco">
                             </div>
 
                             <div class="carousel-item">
-                                <img  src="img/carrousel/caro_uno/te.jpeg" class="d-block img-fluid container-fluid"  alt="te">
+                                <img  src="img/carrousel/caro_uno/te.jpeg" class="d-block img-fluid"  alt="te">
                             </div>
 
                             <div class="carousel-item">
-                                <img  src="img/carrousel/caro_uno/cafe.jpeg" class="d-block img-fluid container-fluid" alt="cafe" >
+                                <img  src="img/carrousel/caro_uno/cafe.jpeg" class="d-block img-fluid" alt="cafe" >
                             </div>
 
                         </div>
@@ -278,7 +278,7 @@ session_start();
                         <!------------------->
                         <div class="carousel-inner" role="list">
                             <div class="carousel-item active">
-                                <img  src="img/carrousel/te-cafe-o-chocolate.jpeg" class="d-block img-fluid container-fluid"  alt="te cafe o xocolata">
+                                <img  src="img/carrousel/te-cafe-o-chocolate.jpeg" class="d-block img-fluid"  alt="te cafe o xocolata">
                                 <div class="carousel-caption">
                                     <div class="servic">
                                         <a><strong>La beguda divina i la xocolata, que augmenta la resistència i combat la fatiga (Hernán Cortés)</strong></a>
@@ -287,7 +287,7 @@ session_start();
                             </div>
 
                             <div class="carousel-item">
-                                <img  src="img/carrousel/ChocolateCacao.jpeg" class="d-block img-fluid container-fluid"  alt="caco xocolata">
+                                <img  src="img/carrousel/ChocolateCacao.jpeg" class="d-block img-fluid"  alt="caco xocolata">
                                 <div class="carousel-caption">
                                     <div class="servic">
                                         <a><strong>La xocolata calenta plena necessitats profundes (Susan Isaacs)</strong></a>
@@ -297,7 +297,7 @@ session_start();
 
 
                             <div class="carousel-item">
-                                <img  src="img/carrousel/te-negro.jpeg" class="d-block img-fluid container-fluid"  alt="te negre">
+                                <img  src="img/carrousel/te-negro.jpeg" class="d-block img-fluid"  alt="te negre">
                                 <div class="carousel-caption">
                                     <div class="servic">
                                         <a><strong>Cada tassa de te representa un viatge imaginari (Catherine Douzel)</strong></a>
@@ -307,7 +307,7 @@ session_start();
 
 
                             <div class="carousel-item">
-                                <img  src="img/carrousel/2021-cafer_forte.jpeg" class="d-block img-fluid container-fluid"  alt="cafe negre" >
+                                <img  src="img/carrousel/2021-cafer_forte.jpeg" class="d-block img-fluid"  alt="cafe negre" >
                                 <div class="carousel-caption">
                                     <div class="servic">
                                         <a><strong>Si no existissin els cafès,moltes coses mai haurien estat fetes,aquestes,ni pensades.<br>(Heimito von Doderer)</strong></a>
