@@ -84,14 +84,14 @@ header('Content-Type: text/html; charset=UTF-8');
                                 </a></i>
                                 <?php if (Auth::isLogin()): ?>
                                 <h2><?php echo $_SESSION['login']['nom']?></h2>
-                                <a href="logout.php">Cerrar Sesion</a>
+                                <a href="logout.php">Tancar Sesio</a>
                                 <?php else: ?>
                                 <?php
                                 Auth::getUserAuth();
                                 endif; 
                                 ?>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="home.php">Cerrar Sesion</a>
+                                    <a class="dropdown-item" href="home.php">Tancar Sesio</a>
                                 </div>
                             </li>
 
