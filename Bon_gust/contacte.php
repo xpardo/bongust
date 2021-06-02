@@ -76,7 +76,7 @@ session_start();
                             <a class="nav-link" href="contacte.php"><i class="fas fa-address-book">Contacte</i></a>
                         </li>
                         <li class="nav-item active col-12 col-md-2">
-                            <a class="nav-link" href="cart.php"><i class="fas fa-shopping-basket">cistell</i></a>
+                            <a class="nav-link" href="cart.php"><i class="fas fa-shopping-basket">Cistell</i></a>
                         </li>
              
                     
@@ -146,7 +146,7 @@ session_start();
             <section class="contact_info " aria-hidden="true">
                 <section class="info_title">
                     <span class="fas fa-user-circle"></span>
-                    <h2 class="d-block">INFORMACIO <br> DE CONTACTE</h2>
+                    <h2 class="d-block">INFORMACIÓ <br> DE CONTACTE</h2>
                 </section>
                 <section class="info_items">
                     <!--la informacio es fictisia-->
@@ -162,13 +162,13 @@ session_start();
                         <label class="d-block" id="name">Nom *</label>
                         <input class="d-block" type="text" id="names" name="nom" required>
 
-                        <label class="d-block" for="phone">Telefon/Movil</label>
+                        <label class="d-block" for="phone">Telèfon/Mòbil</label>
                         <input class="d-block" type="text" id="phone" name="telefon">
 
                         <label class="d-block" for="email">Email*</label>
                         <input class="d-block" type="text" id="email" name="email" required>
 
-                        <label class="d-block" for="missatge"> Missatge*</label>
+                        <label class="d-block" for="missatge">Missatge*</label>
                         <textarea class="d-block" aria-multiline="true" id="missatge" name="missatge" required></textarea>
 
                         

@@ -159,7 +159,7 @@ header('Content-Type: text/html; charset=UTF-8');
                         <th><?php echo $c["q"];?></th>
                             <td><?php echo $r->nom;?></td>
                             <td>€ <?php echo $r->preu; ?></td>
-                            <td>€ <?php echo $c["q"]+$r->preu; ?></td>
+                            <td>€ <?php echo $c["q"]*$r->preu; ?></td>
 
                             <td style="width:260px;">
                             <?php
@@ -187,9 +187,9 @@ header('Content-Type: text/html; charset=UTF-8');
                 </form>
 
                 <?php }else{?>
-                    <p class="alert alert-warning">La cistella esta vuit</p>
+                    <p class="alert alert-warning">La cistell esta vuit</p>
                 <?php }?>
-                <p>No se accepten canvis ni devolucions</p>
+                <p>No s'accepten canvis ni devolucions</p>
 
 	
         </div>
@@ -197,7 +197,7 @@ header('Content-Type: text/html; charset=UTF-8');
 </div>
 
 
- 
+
 
 
 <!--Peu de pagina-->   

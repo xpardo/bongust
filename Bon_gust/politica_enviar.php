@@ -141,10 +141,10 @@ session_start();
 
                     <div class="po">
                         <a href="home.php">Incici</a>
-                        <a href="politica_enviar.php">/d'enviaments</a>
+                        <a href="politica_enviar.php">/ Política d'enviaments</a>
                     </div>
                     
-                        <div class="col-12 col-m-7"><h1 ><strong>Poítica d'enviaments</strong></h1><br></div>
+                        <div class="col-12 col-m-7"><h1 ><strong>Política d'enviaments</strong></h1><br></div>
                   
                     <div class="atcli">
                         <div class="col-12 offset-4"><a><strong>Enviament del paquet</strong></a><br></div>

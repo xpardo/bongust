@@ -12,9 +12,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!checkIfEmailExists($_REQUEST["email"])){
 
         if(addUser($_REQUEST["nom"],$_REQUEST["email"],$_REQUEST["pass"])){
-
-                echo "Usuari creat correctament, pots fer login <a href=\"login.php\">aquí</a>";
-                $errors=false;
+            header('location:login.php');
+              
+            $errors=false;
         }
 
     }else{
@@ -51,9 +51,9 @@ if($errors){
         <input type="text" name="nom" id="nom"><br>
         <label for="email">Email:</label>
         <input type="text" name="email" id="email"><br>
-        <label for="pass">Pass:</label>
+        <label for="pass">Password:</label>
         <input type="password" name="pass" id="pass"><br>
-        <label for="pass2">Repeteix pass:</label>
+        <label for="pass2">Repeteix password:</label>
         <input type="password" name="pass2" id="pass2"><br>
         <input type="submit" value="Afegeix">
     </form>

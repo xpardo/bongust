@@ -84,7 +84,7 @@ session_start();
                             <a class="nav-link" href="contacte.php"><i class="fas fa-address-book">Contacte</i></a>
                         </li>
                         <li class="nav-item active col-12 col-md-2">
-                            <a class="nav-link" href="cart.php"><i class="fas fa-shopping-basket">cistell</i></a>
+                            <a class="nav-link" href="cart.php"><i class="fas fa-shopping-basket">Cistell</i></a>
                         </li>
              
                     
@@ -238,7 +238,7 @@ session_start();
                                 
                                 $found = false;
                                 if($found):
-                                    echo "<a href='cart.php' class='btn btn-info'>Agregado</a>";
+                                    echo "<a href='cart.php' class='btn btn-info'>Afegit</a>";
                                 else:
                                     
                                 endif;
@@ -310,7 +310,7 @@ session_start();
                                 <img  src="img/carrousel/2021-cafer_forte.jpeg" class="d-block img-fluid"  alt="cafe negre" >
                                 <div class="carousel-caption">
                                     <div class="servic">
-                                        <a><strong>Si no existissin els cafès,moltes coses mai haurien estat fetes,aquestes,ni pensades.<br>(Heimito von Doderer)</strong></a>
+                                        <a><strong>Si no existissin els cafès, moltes coses mai haurien estat fetes, aquestes,ni pensades.<br>(Heimito von Doderer)</strong></a>
                                     </div>
                                 </div>
                             </div>

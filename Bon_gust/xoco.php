@@ -136,7 +136,7 @@ header('Content-Type: text/html; charset=UTF-8');
     <div class="container-fluid m-3">
         <div class="row">
             <div class="po">
-                <a href="home.php">Incici</a>
+                <a href="home.php">Inici</a>
                 <a href="cafe.php">/Xocolata</a>
             </div>
             <h1 class="fas fa-glass-whiskey">XOCOLATA</h1>

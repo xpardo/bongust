@@ -142,7 +142,7 @@ header('Content-Type: text/html; charset=UTF-8');
                         <a href="politica_botigues.php">/Política de botiga</a>
                     </div>
 
-                    <div class="col-12 col-m-7"><h1 ><strong>Poítica de la Botgia</strong></h1><br></div>
+                    <div class="col-12 col-m-7"><h1 ><strong>Política de la Botiga</strong></h1><br></div>
 
                     <div class="atcli">
                         <div class="col-12 offset-4"><a><strong>Atenció al client</strong></a><br></div>
@@ -153,8 +153,8 @@ header('Content-Type: text/html; charset=UTF-8');
                         </a><br><br>
                         <div class="col-12 offset-5"><a><strong>Preus</strong></a><br></div>
                         <a>
-                            Els preus dels nostres articles s'assenyalen sempre en Euros i porten l'I.V. A. inclòs. Q
-                            ualsevol altre import que hagi d'afegir-se (despeses d'enviament, etc.) s'indicarà desglossat durant el 
+                            Els preus dels nostres articles s'assenyalen sempre en Euros i porten l'I.V. A. inclòs. 
+                         Qualsevol altre import que hagi d'afegir-se (despeses d'enviament, etc.) s'indicarà desglossat durant el 
                             procés de compra i abans que confirmis el pagament.
                         </a><br><br>
 
@@ -218,7 +218,7 @@ header('Content-Type: text/html; charset=UTF-8');
                             o de les activitats en ell desenvolupades, 
                             serà aplicable la legislació catalana, a la qual se sotmeten expressament les parts, 
                             sent competents per a la resolució de tots els conflictes derivats o 
-                            relacionats amb el seu ús els Jutjats i Tribunals de catalunya.
+                            relacionats amb el seu ús els Jutjats i Tribunals de Catalunya.
                         </a><br><br>
 
                     

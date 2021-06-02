@@ -28,7 +28,6 @@ if (isset($_POST['submitPayment'])) {
 
     ?>
     
-    <div class="loading">Un momento, por favor</div>
     
     <form id="realizarPago" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         <input name="cmd" type="hidden" value="_cart" />

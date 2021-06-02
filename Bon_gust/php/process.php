@@ -12,5 +12,6 @@ if(!empty($_POST)){
         unset($_SESSION["cart"]);
     }
 }
-print "<script>alert('seguent pas');window.location='../page.php';</script>";
+header('location:../page.php');
+
 ?>

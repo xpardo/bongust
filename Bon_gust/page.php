@@ -74,8 +74,7 @@ header('Content-Type: text/html; charset=UTF-8');
         $order = date('ymdHis');
 
         ?>
-        
-        <div class="loading">Un momento, por favor</div>
+      
         
         <form id="realizarPago" action="https://www.paypal.com/cgi-bin/webscr" method="post">
             <input name="cmd" type="hidden" value="_cart" />
@@ -105,7 +104,7 @@ header('Content-Type: text/html; charset=UTF-8');
     <div class="page">
         <form class="form-amount" action="pag.php" method="post">
             <img class="logo img-responsive" src="img/logo/bon_gust.png" alt="BON GUST" height="65" width="300"><br/>
-            <?php if ($error) { ?><div class="alert alert-danger">El valor introducido no es correcto. Debe introducir por ejemplo: 50.99</div><?php } ?>
+            <?php if ($error) { ?><div class="alert alert-danger">El valor introduïtno es el correcte. Has de  introduïr por exemple: 50.99</div><?php } ?>
             <div class="form-group">
             
                 <label for="concept" style="color: black;">Indicar un concepte</label>
@@ -151,7 +150,8 @@ header('Content-Type: text/html; charset=UTF-8');
             <th><?php echo $c["q"];?></th>
             <td><?php echo $r->nom;?></td>
             <td><?php echo $r->preu;?></td>
-            <td><?php echo $total=$c["q"]+$r->preu;?>€</td>
+            <td><?php echo $total=$c["q"]*$r->preu;?>€</td>
+            
             
 
         </tr>
@@ -193,5 +193,15 @@ header('Content-Type: text/html; charset=UTF-8');
 
     </div>
 </div>
+
+
+
+
+
+
 </body>
 </html>
+
+
+
+

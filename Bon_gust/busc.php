@@ -187,12 +187,7 @@ session_start();
                 echo "<br><table class='table table-striped'>";
                 While($row = $result->fetch_assoc()) {   
                     $row_count++;                         
-                    echo "<form class='form-inline' method='post' action='./php/addtocart.php'>";
-                    echo "<tr><td>".$row_count." </td><td>". $row['nom']."</td>
-                    <td>". $row['descripcio'] ."</td><td>". $row['preu'] . "€</td>
-                    <td><input type='hidden' name='product_id' value=".$row["id"]."></td>
-                    <td><input type='number' name='q' value='1' style='width:100px;' min='1' class='form-control' placeholder='cuantitat'></td>
-                    <td><button type='submit' class='btn btn-primary'>Agregar al cistella</button></td><td></tr>";
+                   
               
                 }
                 echo "</table>";
@@ -225,6 +220,91 @@ session_start();
 
 
         ?>
+
+
+
+
+
+        
+<?php
+
+//listar productes
+
+$conn = connectDB('localhost', 'xpardo', 'xpardo', 'xpardo_botigaonline');
+$sql = "SELECT * FROM productes WHERE nom like '%" . $aKeyword[0] . 
+"%' OR descripcio like '%" . $aKeyword[0] . "%'";
+
+if (!$resultado = $conn->query($sql,)) {
+    die("error ejecutando la consulta:".$conn->error);
+}
+
+while($producto=$resultado->fetch_assoc()){
+
+    $conn2 = connectDB('localhost', 'xpardo', 'xpardo', 'xpardo_botigaonline');                                           
+    $sql2 = "SELECT * from Imatges,productes where productes_id= ".$producto["id"];
+
+    if (!$resultado2 = $conn2->query($sql2)) {
+        die("error ejecutando la consulta:".$conn2->error);
+    }
+    $imagen=$resultado2->fetch_assoc();
+    echo "<form class='form-inline' method='post' aria-hidden='true' aria-expanded='false' action='./php/addtocart.php'>";
+    
+    echo "<p><strong>".$producto["nom"]. "</strong><br><br>";
+        
+    echo "<img role='img' width=\"300\" height=\"300\" alt=\"cafe\" src=\"".$imagen["ruta"]."\"><br><br>";
+    echo "<strong> PREU: </strong>".$producto["preu"]."€ <br><br>";
+    echo "<strong> DESCRIPCIÓ: </strong> <br>"  .$producto["descripcio"]. "<br><br>";  
+    echo "<input type='hidden' name='product_id' value=".$producto["id"].">";
+
+    echo "<input type='number' name='q' value='1' style='width:100px;' min='1' class='form-control' placeholder='Cantidad'>";
+
+    echo "<button type='submit' class='btn btn-primary'>Afegir al cistell</button>";
+ echo"</p>";
+ 
+echo "</form>";
+echo "<hr>";
+
+    
+    $found = false;
+    if($found):
+        echo "<a href='cart.php' class='btn btn-info'>Afegit</a>";
+    else:
+        
+    endif;
+
+    if(isset($_SESSION["cart"])){ 
+        foreach ($_SESSION["cart"] as $c) { 
+            if($c["product_id"]==$resultado2){ 
+                $found=true; 
+                break; 
+            }
+        }
+    }
+
+}        
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   </div>
 </div>
