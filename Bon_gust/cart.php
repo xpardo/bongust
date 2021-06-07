@@ -159,7 +159,7 @@ header('Content-Type: text/html; charset=UTF-8');
                         <th><?php echo $c["q"];?></th>
                             <td><?php echo $r->nom;?></td>
                             <td>€ <?php echo $r->preu; ?></td>
-                            <td>€ <?php echo $c["q"]*$r->preu; ?></td>
+                            <td>€ <?php echo $total=$c["q"]*$r->preu; ?></td>
 
                             <td style="width:260px;">
                             <?php
@@ -177,7 +177,7 @@ header('Content-Type: text/html; charset=UTF-8');
 
                         <?php endforeach; ?>
                 </table>
-
+              
                 <form class="form-horizontal" method="post" action="./php/process.php">
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
