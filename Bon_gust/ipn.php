@@ -26,8 +26,8 @@ $fp = fsockopen ('ssl://www.sandbox.paypal.com', 443, $errno, $errstr, 30);
 //$fp = fsockopen (�ssl://www.paypal.com�, 443, $errno, $errstr, 30);
 if (!$fp) {
  // ERROR DE HTTP
-    echo "no se ha aiberto el socket<br/>";
-}else{ echo "si se ha abierto el socket<br/>";
+    echo "no s'ha obert el socket<br/>";
+}else{ echo "si s'ha obert el socket<br/>";
     fputs ($fp, $header . $req);
     while (!feof($fp)) {
         $res = fgets ($fp, 1024);
@@ -46,9 +46,9 @@ if (!$fp) {
 
  
 
-            mail("correo", "NOTIFICACION DE PAGO", $recibido , $headers);
+            mail("correo", "NOTIFICACIO DE PAGAMENT", $recibido , $headers);
         } else if (strcmp ($res, "INVALID") == 0) {
-            mail("correo", "NOTIFICACION DE PAGO INVALIDA", "invalido",$headers);
+            mail("correo", "NOTIFICACIO DE PAGAMENT INVALID", "invalido",$headers);
         }
     }fclose ($fp);
 }

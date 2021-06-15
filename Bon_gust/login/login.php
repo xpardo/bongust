@@ -134,7 +134,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'&&!isset($_REQUEST["busca"])) {
                 
                 </form>
               
-                  <span class="text-footer">¿Encara no t'has registrat?
+                  <span class="text-footer">¿Encara no t'as registrat?
                   <a href="register.php">Registrat</a>
                   </span>
                   <span class="text-footer">Tornar a la pantalla d'inici

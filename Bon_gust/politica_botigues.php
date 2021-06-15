@@ -97,6 +97,7 @@ header('Content-Type: text/html; charset=UTF-8');
                                 ?>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="home.php">Tancar Sesio</a>
+                                    <a class="dropdown-item"  href="alta.php?emailc=<?=$_SESSION["login"]?>">Edita les teves dades</a>
                                 </div>
                             </li>
 
@@ -258,7 +259,7 @@ header('Content-Type: text/html; charset=UTF-8');
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="cafe.php"> <i class="fas fa-coffee">Café</i></a>
                                 <a class="dropdown-item" href="xoco.php"> <i class="fas fa-coffee">Xocolata</i></a>
-                                <a class="dropdown-item" href="te.php"> <i class="fad fas fa-coffee">Té</i></a>
+                                <a class="dropdown-item" href="te.php"> <i class="fad fas fa-coffee">Te</i></a>
                                 <a class="dropdown-item" href="accesoris.php"> <i class="fas fa-blender">Accesoris</i></a>
                             </div>
                         </li>

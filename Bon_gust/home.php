@@ -97,7 +97,7 @@ session_start();
                                 <i class="fas fa-user">usuari
                                 </a></i>
                                 <?php if (Auth::isLogin()): ?>
-                                <h2><?php echo $_SESSION['login']['nom'] ?></h2>
+                                <h2><?php echo $_SESSION['nom']['nom'] ?></h2>
                                 <a href="logout.php">Tancar Sesio</a>
                                 <?php else: ?>
                                 <?php
@@ -106,6 +106,8 @@ session_start();
                                 ?>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="home.php">Tancar Sesio</a>
+                               
+                                    <a class="dropdown-item"  href="alta.php?emailc=<?=$_SESSION["login"]?>">Edita les teves dades</a>
                                 </div>
                             </li>
 
@@ -230,10 +232,10 @@ session_start();
                                 echo "<input type='number' name='q' value='1' style='width:100px;' min='1' class='form-control' placeholder='Cantidad'>";
                         
                                 echo "<button type='submit' class='btn btn-primary'>Afegir al cistell</button>";
-                             echo"</p>";
-                             
-                            echo "</form>";
-                            echo "<hr>";
+                                echo"</p>";
+                                
+                                echo "</form>";
+                                echo "<hr>";
                           
                                 
                                 $found = false;
@@ -376,7 +378,7 @@ session_start();
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="cafe.php"> <i class="fas fa-coffee">Café</i></a>
                                 <a class="dropdown-item" href="xoco.php"> <i class="fas fa-coffee">Xocolata</i></a>
-                                <a class="dropdown-item" href="te.php"> <i class="fad fas fa-coffee">Té</i></a>
+                                <a class="dropdown-item" href="te.php"> <i class="fad fas fa-coffee">Te</i></a>
                                 <a class="dropdown-item" href="accesoris.php"> <i class="fas fa-blender">Accesoris</i></a>
                             </div>
                         </li>

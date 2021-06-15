@@ -94,6 +94,7 @@ header('Content-Type: text/html; charset=UTF-8');
                                 ?>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="home.php">Tancar Sesio</a>
+                                    <a class="dropdown-item"  href="alta.php?emailc=<?=$_SESSION["login"]?>">Edita les teves dades</a>
                                 </div>
                             </li>
 
@@ -138,8 +139,7 @@ header('Content-Type: text/html; charset=UTF-8');
 
             <h1> <i class="fas fa-blender">ACCESORIS</h1></i>
 
-            <div class="col-12 col-m-7">
-                <div class="prod">
+            <div class="prodhom d-block">
 
                     <?php
                         
@@ -165,10 +165,10 @@ header('Content-Type: text/html; charset=UTF-8');
                             
                             $imagen=$resultado2->fetch_assoc();
                             echo "<form class='form-inline' method='post' aria-hidden='true' aria-expanded='false' action='./php/addtocart.php'>";
-                                    
+                                
                             echo "<p><strong>".$producto["nom"]. "</strong><br><br>";
                                 
-                            echo "<img role='img' width=\"300\" height=\"300\" alt=\"te\" src=\"".$imagen["ruta"]."\"><br><br>";
+                            echo "<img role='img' width=\"300\" height=\"300\" alt=\"cafe\" src=\"".$imagen["ruta"]."\"><br><br>";
                             echo "<strong> PREU: </strong>".$producto["preu"]."€ <br><br>";
                             echo "<strong> DESCRIPCIÓ: </strong> <br>"  .$producto["descripcio"]. "<br><br>";  
                             echo "<input type='hidden' name='product_id' value=".$producto["id"].">";
@@ -177,9 +177,9 @@ header('Content-Type: text/html; charset=UTF-8');
                     
                             echo "<button type='submit' class='btn btn-primary'>Afegir al cistell</button>";
                             echo"</p>";
-                            echo "</form>";
                             
-                            echo "<hr><br>";
+                            echo "</form>";
+                            echo "<hr>";
 
                             $found = false;
                             if($found):
@@ -199,7 +199,7 @@ header('Content-Type: text/html; charset=UTF-8');
                         }    
                     ?>
 
-                </div>   
+                
             </div>
         </div>
     </div>
@@ -232,7 +232,7 @@ header('Content-Type: text/html; charset=UTF-8');
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="cafe.php"> <i class="fas fa-coffee">Café</i></a>
                                 <a class="dropdown-item" href="xoco.php"> <i class="fas fa-coffee">Xocolata</i></a>
-                                <a class="dropdown-item" href="te.php"> <i class="fad fas fa-coffee">Té</i></a>
+                                <a class="dropdown-item" href="te.php"> <i class="fad fas fa-coffee">Te</i></a>
                                 <a class="dropdown-item" href="accesoris.php"> <i class="fas fa-blender">Accesoris</i></a>
                             </div>
                         </li>

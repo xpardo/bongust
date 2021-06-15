@@ -98,7 +98,7 @@ $dades["accio"]="Afegir";
 
 if(isset($_REQUEST["edit"])){
 
-    if(!isAdmin($_SESSION["usuari"])&&$_SESSION["usuari"]!=$_REQUEST["edit"]){
+    if(!isAdmin($_SESSION["login"])&&$_SESSION["login"]!=$_REQUEST["edit"]){
         echo "error";
         die();
     }else{

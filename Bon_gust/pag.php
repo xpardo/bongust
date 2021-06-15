@@ -60,7 +60,7 @@ else {
     <a href="page.php">/pagar</a>
 </div>
     <img class="logo img-responsive" src="img/logo/bon_gust.png" alt="BON GUST" height="65" width="300"><br/>
-    <?php if ($error) { ?><div class="alert alert-danger">El valor introduit no es correcte.  Has d'introduir per exemple: 50.99</div><?php } ?>
+    <?php if ($error) { ?><div class="alert alert-danger">El valor introduït no és correcte. Has d'introduir per exemple: 50.99</div><?php } ?>
     <div class="form-group">
         <label for="concept">Concepto</label>
         <input type="text" id="concept" name="concept" class="form-control"<?php if ($concept) { ?> value="<?php echo $concept; ?>"<?php }else{ ?> placeholder="Indicar un concepte"<?php } ?>>

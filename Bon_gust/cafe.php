@@ -92,6 +92,7 @@ header('Content-Type: text/html; charset=UTF-8');
                                 ?>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="home.php">Tancar Sesio</a>
+                                    <a class="dropdown-item"  href="alta.php?emailc=<?=$_SESSION["login"]?>">Edita les teves dades</a>
                                 </div>
                             </li>
 
@@ -137,8 +138,8 @@ header('Content-Type: text/html; charset=UTF-8');
             </div>
             
             <h1 class="fas fa-mug-hot">CAFÉ</h1><br>
-            <div class="col-12 col-m-7">
-                <div class="prod">
+           
+                <div class="prodhom d-block">
     
                     <?php
         
@@ -162,7 +163,6 @@ header('Content-Type: text/html; charset=UTF-8');
                         }
                         $imagen=$resultado2->fetch_assoc();
                     
-                        
                         echo "<form class='form-inline' method='post' aria-hidden='true' aria-expanded='false' action='./php/addtocart.php'>";
                                 
                         echo "<p><strong>".$producto["nom"]. "</strong><br><br>";
@@ -175,11 +175,10 @@ header('Content-Type: text/html; charset=UTF-8');
                         echo "<input type='number' name='q' value='1' style='width:100px;' min='1' class='form-control' placeholder='Cantidad'>";
                 
                         echo "<button type='submit' class='btn btn-primary'>Afegir al cistell</button>";
-                     echo"</p>";
-                    echo "</form>";
-                    
-                    echo "<hr><br>";
-            
+                        echo"</p>";
+                        
+                        echo "</form>";
+                        echo "<hr>";
                         
                         $found = false;
                         if($found):
@@ -202,8 +201,6 @@ header('Content-Type: text/html; charset=UTF-8');
                     ?>
               
                 </div>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -235,7 +232,7 @@ header('Content-Type: text/html; charset=UTF-8');
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="cafe.php"> <i class="fas fa-coffee">Café</i></a>
                                 <a class="dropdown-item" href="xoco.php"> <i class="fas fa-coffee">Xocolata</i></a>
-                                <a class="dropdown-item" href="te.php"> <i class="fad fas fa-coffee">Té</i></a>
+                                <a class="dropdown-item" href="te.php"> <i class="fad fas fa-coffee">Te</i></a>
                                 <a class="dropdown-item" href="accesoris.php"> <i class="fas fa-blender">Accesoris</i></a>
                             </div>
                         </li>

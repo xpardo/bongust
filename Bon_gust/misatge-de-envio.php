@@ -98,6 +98,7 @@ session_start();
                                 ?>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="home.php">Tancar Sesio</a>
+                                    <a class="dropdown-item"  href="alta.php?emailc=<?=$_SESSION["login"]?>">Edita les teves dades</a>
                                 </div>
                             </li>
 
@@ -176,7 +177,7 @@ session_start();
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="cafe.php"><i class="fas fa-coffee">Café </i><a>
                                     <a class="dropdown-item" href="xoco.php"><i class="fas fa-coffee">Xocolata</a></i>
-                                    <a class="dropdown-item" href="te.php"><i class="fad fas fa-coffee">Té</a></i>
+                                    <a class="dropdown-item" href="te.php"><i class="fad fas fa-coffee">Te</a></i>
                                     <a class="dropdown-item" href="accesoris.php"><i class="fas fa-blender">Accesoris</a></i>
                                 </div>
                             </li>

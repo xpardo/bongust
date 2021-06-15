@@ -99,6 +99,7 @@ session_start();
                                 ?>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="home.php">Tancar Sesio</a>
+                                    <a class="dropdown-item"  href="alta.php?emailc=<?=$_SESSION["login"]?>">Edita les teves dades</a>
                                 </div>
                             </li>
 
@@ -143,9 +144,7 @@ session_start();
             <h1>TOTS ELS PRODUCTES</h1>
     
 
-                <div class="col-12 col-m-2">
-                    <div class="prod">
-                        
+            <div class="prodhom d-block">
 <!----------------------------------------------------------------------------------------------------------------------->
 <!-------------------LLista de productes--------------->                        
                                 
@@ -172,18 +171,18 @@ session_start();
                             
                             echo "<form class='form-inline' method='post' aria-hidden='true' aria-expanded='false' action='./php/addtocart.php'>";
                                 
-                                echo "<p><strong>".$producto["nom"]. "</strong><br><br>";
-                                    
-                                echo "<img role='img' width=\"300\" height=\"300\" alt=\"cafe\" src=\"".$imagen["ruta"]."\"><br><br>";
-                                echo "<strong> PREU: </strong>".$producto["preu"]."€ <br><br>";
-                                echo "<strong> DESCRIPCIÓ: </strong> <br>"  .$producto["descripcio"]. "<br><br>";  
-                                echo "<input type='hidden' name='product_id' value=".$producto["id"].">";
-                            
-                                echo "<input type='number' name='q' value='1' style='width:100px;' min='1' class='form-control' placeholder='Cantidad'>";
+                            echo "<p><strong>".$producto["nom"]. "</strong><br><br>";
+                                
+                            echo "<img role='img' width=\"300\" height=\"300\" alt=\"cafe\" src=\"".$imagen["ruta"]."\"><br><br>";
+                            echo "<strong> PREU: </strong>".$producto["preu"]."€ <br><br>";
+                            echo "<strong> DESCRIPCIÓ: </strong> <br>"  .$producto["descripcio"]. "<br><br>";  
+                            echo "<input type='hidden' name='product_id' value=".$producto["id"].">";
                         
-                                echo "<button type='submit' class='btn btn-primary'>Afegir al cistell</button>";
-                             echo"</p>";
-                             
+                            echo "<input type='number' name='q' value='1' style='width:100px;' min='1' class='form-control' placeholder='Cantidad'>";
+                    
+                            echo "<button type='submit' class='btn btn-primary'>Afegir al cistell</button>";
+                            echo"</p>";
+                            
                             echo "</form>";
                             echo "<hr>";
                           
@@ -208,10 +207,10 @@ session_start();
                         
                     ?>
                     
-                </div>
+               
             </div>
         </div>
-        </div>
+      
     </div>
 
 
@@ -243,7 +242,7 @@ session_start();
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="cafe.php"> <i class="fas fa-coffee">Café</i></a>
                                 <a class="dropdown-item" href="xoco.php"> <i class="fas fa-coffee">Xocolata</i></a>
-                                <a class="dropdown-item" href="te.php"> <i class="fad fas fa-coffee">Té</i></a>
+                                <a class="dropdown-item" href="te.php"> <i class="fad fas fa-coffee">Te</i></a>
                                 <a class="dropdown-item" href="accesoris.php"> <i class="fas fa-blender">Accesoris</i></a>
                             </div>
                         </li>

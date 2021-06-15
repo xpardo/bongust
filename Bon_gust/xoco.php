@@ -140,8 +140,7 @@ header('Content-Type: text/html; charset=UTF-8');
                 <a href="cafe.php">/Xocolata</a>
             </div>
             <h1 class="fas fa-glass-whiskey">XOCOLATA</h1>
-            <div class="col-12 col-m-7">
-                <div class="prod">
+            <div class="prodhom d-block">
                     <?php
 
                     //lista de xoco
@@ -183,9 +182,9 @@ header('Content-Type: text/html; charset=UTF-8');
                 
                         echo "<button type='submit' class='btn btn-primary'>Afegir al cistell</button>";
                         echo"</p>";
-                        echo "</form>";
                         
-                        echo "<hr><br>";
+                        echo "</form>";
+                        echo "<hr>";
                         $found = false;
                         if($found):
                             echo "<a href='cart.php' class='btn btn-info'>Agregado</a>";
@@ -204,11 +203,11 @@ header('Content-Type: text/html; charset=UTF-8');
                     }    
 
                     ?>
-                </div>
+                
             </div>
         </div>
     </div>
-                </div>
+                
 
 </section>
 
@@ -238,7 +237,7 @@ header('Content-Type: text/html; charset=UTF-8');
                                 <div class="dropdown-menu" >
                                     <a class="dropdown-item" href="cafe.php"><i class="fas fa-coffee">Café </i></a>
                                     <a class="dropdown-item" href="xoco.php"><i class="fas fa-coffee">Xocolata</i></a>
-                                    <a class="dropdown-item" href="te.php"><i class="fad fas fa-coffee">Té</i></a>
+                                    <a class="dropdown-item" href="te.php"><i class="fad fas fa-coffee">Te</i></a>
                                     <a class="dropdown-item" href="accesoris.php"><i class="fas fa-blender">Accesoris</i></a>
                                 </div>
                             </li>

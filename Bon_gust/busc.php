@@ -99,6 +99,7 @@ session_start();
                                 ?>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="home.php">Tancar Sesio</a>
+                                    <a class="dropdown-item"  href="alta.php?emailc=<?=$_SESSION["login"]?>">Edita les teves dades</a>
                                 </div>
                             </li>
  
@@ -139,7 +140,7 @@ session_start();
  <hr>
 
 <div class="row">
-  <div class="col-12 col-md-12">
+
     <div class="prodhom d-block">
 
 <!---Buscador------------------>
@@ -248,7 +249,7 @@ while($producto=$resultado->fetch_assoc()){
     }
     $imagen=$resultado2->fetch_assoc();
     echo "<form class='form-inline' method='post' aria-hidden='true' aria-expanded='false' action='./php/addtocart.php'>";
-    
+                                
     echo "<p><strong>".$producto["nom"]. "</strong><br><br>";
         
     echo "<img role='img' width=\"300\" height=\"300\" alt=\"cafe\" src=\"".$imagen["ruta"]."\"><br><br>";
@@ -259,10 +260,10 @@ while($producto=$resultado->fetch_assoc()){
     echo "<input type='number' name='q' value='1' style='width:100px;' min='1' class='form-control' placeholder='Cantidad'>";
 
     echo "<button type='submit' class='btn btn-primary'>Afegir al cistell</button>";
- echo"</p>";
- 
-echo "</form>";
-echo "<hr>";
+    echo"</p>";
+    
+    echo "</form>";
+    echo "<hr>";
 
     
     $found = false;
@@ -285,27 +286,7 @@ echo "<hr>";
 ?>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
+    
   </div>
 </div>
 
@@ -341,7 +322,7 @@ echo "<hr>";
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="cafe.php"><i class="fas fa-coffee">Café </i><a>
                                 <a class="dropdown-item" href="xoco.php"><i class="fas fa-coffee">Xocolata</a></i>
-                                <a class="dropdown-item" href="te.php"><i class="fad fas fa-coffee">Té</a></i>
+                                <a class="dropdown-item" href="te.php"><i class="fad fas fa-coffee">Te</a></i>
                                 <a class="dropdown-item" href="accesoris.php"><i class="fas fa-blender">Accesoris</a></i>
                             </div>
                         </li>

@@ -93,6 +93,7 @@ header('Content-Type: text/html; charset=UTF-8');
                                 ?>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="home.php">Tancar Sesio</a>
+                                    <a class="dropdown-item"  href="alta.php?emailc=<?=$_SESSION["login"]?>">Edita les teves dades</a>
                                 </div>
                             </li>
 
@@ -134,7 +135,7 @@ header('Content-Type: text/html; charset=UTF-8');
 			
             <?php
             /*
-            * Esta es la consula para obtener todos los productos de la base de datos.
+            *Aquesta és la consula per a obtenir tots els productes de la base de dades.
             */
             $products = $con->query("SELECT * from productes");
             if(isset($_SESSION["cart"]) && !empty($_SESSION["cart"])){
@@ -145,11 +146,12 @@ header('Content-Type: text/html; charset=UTF-8');
                         <th>Producte</th>
                         <th>Preu per unitat</th>
                         <th>Total</th>
+                        
                         <th></th>
                     </thead>
                     <?php 
                     /*
-                    * Apartir de aqui hacemos el recorrido de los productos obtenidos y los reflejamos en una tabla.
+                    * Apartir de aqui fem el recorregut dels productes obtinguts i els reflectim en una taula
                     */
                     foreach($_SESSION["cart"] as $c):
                     $products = $con->query("SELECT * from productes where id=$c[product_id]");
@@ -160,6 +162,8 @@ header('Content-Type: text/html; charset=UTF-8');
                             <td><?php echo $r->nom;?></td>
                             <td>€ <?php echo $r->preu; ?></td>
                             <td>€ <?php echo $total=$c["q"]*$r->preu; ?></td>
+                         
+                       
 
                             <td style="width:260px;">
                             <?php
@@ -171,12 +175,16 @@ header('Content-Type: text/html; charset=UTF-8');
                                 }
                             }
                         ?>
+                         
                         <a href="php/delfromcart.php?id=<?php echo $c["product_id"];?>" class="btn btn-danger">Eliminar</a>
                         </td>
                     </tr>
 
+
                         <?php endforeach; ?>
                 </table>
+
+               
               
                 <form class="form-horizontal" method="post" action="./php/process.php">
                     <div class="form-group">
@@ -226,7 +234,7 @@ header('Content-Type: text/html; charset=UTF-8');
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="cafe.php"> <i class="fas fa-coffee">Café</i></a>
                                 <a class="dropdown-item" href="xoco.php"> <i class="fas fa-coffee">Xocolata</i></a>
-                                <a class="dropdown-item" href="te.php"> <i class="fad fas fa-coffee">Té</i></a>
+                                <a class="dropdown-item" href="te.php"> <i class="fad fas fa-coffee">Te</i></a>
                                 <a class="dropdown-item" href="accesoris.php"> <i class="fas fa-blender">Accesoris</i></a>
                             </div>
                         </li>

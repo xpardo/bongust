@@ -57,7 +57,7 @@ if($errors){
         <input type="password" name="pass2" id="pass2"><br>
         <input type="submit" value="Afegeix">
     </form>
-    <span class="text-footer">¿Ya tens una conta?
+    <span class="text-footer">¿ja tens una compte?
         <a href="login.php">login</a>
     </span>
 
